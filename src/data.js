@@ -34,7 +34,7 @@ export const BULBS = [
 export const STAR_MESSAGE = {
     type: "Special",
     hasVideo: true,
-    videoSrc: "/christmas/k1.MOV",
+    videoSrc: "/christmas/k1.mp4",
 };
 
 export const HIDDEN_GIFT = {
@@ -49,7 +49,7 @@ export const LEFT_GIFT = {
     type: "Left Gift",
     title: "🎁 Hidden 1",
     hasVideo: true,
-    videoSrc: "/christmas/m1.MOV",
+    videoSrc: "/christmas/m1.mp4",
     message: "哈哈哈哈哈哈哈哈"
 };
 
