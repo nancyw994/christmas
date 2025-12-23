@@ -200,7 +200,7 @@ function App() {
                                                 marginBottom: '20px'
                                             }}
                                         >
-                                            <source src={STAR_MESSAGE.videoSrc} type="video/quicktime" />
+                                            <source src={STAR_MESSAGE.videoSrc} type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
