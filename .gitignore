@@ -26,3 +26,7 @@ Thumbs.db
 # Logs
 logs
 *.log
+
+# Large video files (too big for GitHub)
+public/k1.mp4
+*.MOV
