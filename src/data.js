@@ -56,7 +56,7 @@ export const HIDDEN_GIFT = {
     type: "Hidden Gift",
     title: "🎁 Hidden",
     hasVideo: true,
-    videoSrc: "https://nancyw994.github.io/christmas/v1.mp4",
+    videoSrc: "/christmas/v1.mp4",
     message: "没猜到吧！略略略😜"
 };
 
