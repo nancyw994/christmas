@@ -261,6 +261,8 @@ function App() {
                                             controls 
                                             autoPlay 
                                             muted
+                                            playsInline
+                                            preload="auto"
                                             style={{
                                                 width: '100%',
                                                 maxWidth: '500px',
@@ -268,7 +270,7 @@ function App() {
                                                 marginBottom: '20px'
                                             }}
                                         >
-                                            <source src={LEFT_GIFT.videoSrc} type="video/quicktime" />
+                                            <source src={LEFT_GIFT.videoSrc} type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
