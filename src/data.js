@@ -60,6 +60,14 @@ export const HIDDEN_GIFT = {
     message: "没猜到吧！略略略😜"
 };
 
+export const LEFT_GIFT = {
+    type: "Left Gift",
+    title: "🎁 Hidden 1",
+    hasVideo: true,
+    videoSrc: "/christmas/m1.mp4",
+    message: "哈哈哈哈哈哈哈哈"
+};
+
 // Grid position validation mapping
 export const GRID_VALIDATION = {
     0: { requiredEmoji: "🦭", row: 1, col: 1 }, // seal (1,1)

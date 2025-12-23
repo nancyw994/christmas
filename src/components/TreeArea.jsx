@@ -1,7 +1,7 @@
 import React from 'react';
 import { SPOTS, BULBS, STAR_MESSAGE } from '../data';
 
-const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive, onGiftClick }) => {
+const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive, onGiftClick, onLeftGiftClick }) => {
     return (
         <section className="panel treeWrap">
             <div className="panelHeader">
@@ -33,7 +33,7 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                             </g>
 
                             <g transform="translate(100, 700)" 
-                               onClick={onGiftClick}
+                               onClick={onLeftGiftClick}
                                style={{ cursor: 'pointer' }}
                                className="gift-box">
                                 <rect x="0" y="30" width="150" height="100" fill="#7a2a2a" />
