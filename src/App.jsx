@@ -168,6 +168,26 @@ function App() {
                             <div className="letter-content hidden-gift-content">
                                 <button className="close-btn" onClick={() => setShowHiddenGift(false)}>&times;</button>
                                 <h2>{HIDDEN_GIFT.title}</h2>
+                                
+                                {HIDDEN_GIFT.hasVideo && (
+                                    <div className="hidden-gift-video">
+                                        <video 
+                                            controls 
+                                            autoPlay 
+                                            muted
+                                            style={{
+                                                width: '100%',
+                                                maxWidth: '500px',
+                                                borderRadius: '10px',
+                                                marginBottom: '20px'
+                                            }}
+                                        >
+                                            <source src={HIDDEN_GIFT.videoSrc} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                )}
+                                
                                 <div className="letter-text">
                                     <div style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
                                         {HIDDEN_GIFT.message}

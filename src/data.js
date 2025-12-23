@@ -55,6 +55,8 @@ export const STAR_MESSAGE = {
 export const HIDDEN_GIFT = {
     type: "Hidden Gift",
     title: "🎁 特别的惊喜",
+    hasVideo: true,
+    videoSrc: "/v1.mp4",
     message: `亲爱的阿妞，
 
 这是一个特别的隐藏礼物，只有最细心的人才能发现！
