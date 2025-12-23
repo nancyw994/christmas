@@ -6,7 +6,7 @@ import OrnamentTray from './components/OrnamentTray';
 import Snow from './components/Snow';
 import SecretSanta from './components/SecretSanta';
 import CrosswordPuzzle from './components/CrosswordPuzzle';
-import { TOTAL_ORNAMENTS, ORNAMENTS, SPOTS, HER_NAME, GRID_VALIDATION, STAR_MESSAGE } from './data';
+import { TOTAL_ORNAMENTS, ORNAMENTS, SPOTS, HER_NAME, GRID_VALIDATION, STAR_MESSAGE, HIDDEN_GIFT } from './data';
 
 function App() {
     const [page, setPage] = useState('auth'); // 'auth', 'landing', 'main'
@@ -21,6 +21,7 @@ function App() {
     const [showFinale, setShowFinale] = useState(false);
     const [showLetter, setShowLetter] = useState(false);
     const [starActive, setStarActive] = useState(false);
+    const [showHiddenGift, setShowHiddenGift] = useState(false);
 
     const handleUnlock = () => setPage('landing');
     const handleStart = () => setPage('main');
@@ -87,6 +88,10 @@ function App() {
         }
     };
 
+    const handleGiftClick = () => {
+        setShowHiddenGift(true);
+    };
+
     const resetAll = () => {
         setPlacedOrnaments([]);
         setLightsOn(false);
@@ -137,6 +142,7 @@ function App() {
                             lightsOn={lightsOn}
                             onStarClick={handleStarClick}
                             starActive={starActive}
+                            onGiftClick={handleGiftClick}
                         />
                         
                         <CrosswordPuzzle />
@@ -151,6 +157,20 @@ function App() {
                                 <div className="letter-text">
                                     <div style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
                                         {STAR_MESSAGE.message}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {showHiddenGift && (
+                        <div className="letter-modal show">
+                            <div className="letter-content hidden-gift-content">
+                                <button className="close-btn" onClick={() => setShowHiddenGift(false)}>&times;</button>
+                                <h2>{HIDDEN_GIFT.title}</h2>
+                                <div className="letter-text">
+                                    <div style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
+                                        {HIDDEN_GIFT.message}
                                     </div>
                                 </div>
                             </div>

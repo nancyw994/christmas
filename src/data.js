@@ -52,6 +52,26 @@ export const STAR_MESSAGE = {
 我想守护你。 ⭐`
 };
 
+export const HIDDEN_GIFT = {
+    type: "Hidden Gift",
+    title: "🎁 特别的惊喜",
+    message: `亲爱的阿妞，
+
+这是一个特别的隐藏礼物，只有最细心的人才能发现！
+
+你找到了这个秘密礼物，就像你总是能发现生活中那些美好的小细节一样。
+
+这个礼物代表着我对你的一个承诺：
+无论何时何地，我都会为你准备惊喜，
+就像这个隐藏的礼物一样，
+我的爱也会在意想不到的地方等着你发现。
+
+你是我生命中最珍贵的礼物，
+而我想成为你永远的惊喜。
+
+爱你的人 💝`
+};
+
 // Grid position validation mapping
 export const GRID_VALIDATION = {
     0: { requiredEmoji: "🦭", row: 1, col: 1 }, // seal (1,1)

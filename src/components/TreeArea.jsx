@@ -1,7 +1,7 @@
 import React from 'react';
 import { SPOTS, BULBS, STAR_MESSAGE } from '../data';
 
-const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive }) => {
+const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive, onGiftClick }) => {
     return (
         <section className="panel treeWrap">
             <div className="panelHeader">
@@ -32,7 +32,10 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                                 <path d="M200 370 L300 400 L400 370 L300 120 Z" fill="url(#treeGrad)" stroke="#1a1e0b" strokeWidth="1" />
                             </g>
 
-                            <g transform="translate(100, 700)">
+                            <g transform="translate(100, 700)" 
+                               onClick={onGiftClick}
+                               style={{ cursor: 'pointer' }}
+                               className="gift-box">
                                 <rect x="0" y="30" width="150" height="100" fill="#7a2a2a" />
                                 <text x="10" y="80" fill="#5a1a1a" fontSize="40" fontWeight="bold">2025</text>
                                 <path d="M75 30 Q50 0 25 30 Q50 0 75 30 Q100 0 125 30 Q100 0 75 30" fill="none" stroke="#5a1a1a" strokeWidth="4" />
@@ -42,12 +45,18 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                                     <circle cx="25" cy="0" r="8" fill="white" />
                                 </g>
                             </g>
-                            <g transform="translate(250, 750)">
+                            <g transform="translate(250, 750)"
+                               onClick={onGiftClick}
+                               style={{ cursor: 'pointer' }}
+                               className="gift-box">
                                 <rect x="0" y="0" width="80" height="60" fill="#a4b57e" />
                                 <text x="5" y="40" fill="#7a8a5e" fontSize="25" fontWeight="bold">2025</text>
                                 <path d="M40 0 Q20 -20 10 0 Q20 -20 40 0 Q60 -20 70 0 Q60 -20 40 0" fill="none" stroke="#7a8a5e" strokeWidth="3" />
                             </g>
-                            <g transform="translate(420, 650)">
+                            <g transform="translate(420, 650)"
+                               onClick={onGiftClick}
+                               style={{ cursor: 'pointer' }}
+                               className="gift-box">
                                 <rect x="0" y="50" width="160" height="120" fill="#7a2a2a" />
                                 <text x="15" y="110" fill="#5a1a1a" fontSize="50" fontWeight="bold">2025</text>
                                 <path d="M80 50 Q40 0 20 50 Q40 0 80 50 Q120 0 140 50 Q120 0 80 50" fill="none" stroke="#5a1a1a" strokeWidth="5" />
@@ -58,12 +67,18 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                                     <circle cx="5" cy="5" r="4" fill="red" />
                                 </g>
                             </g>
-                            <g transform="translate(350, 760)">
+                            <g transform="translate(350, 760)"
+                               onClick={onGiftClick}
+                               style={{ cursor: 'pointer' }}
+                               className="gift-box">
                                 <rect x="0" y="0" width="100" height="70" fill="#c46a3d" />
                                 <text x="10" y="45" fill="#a44a2d" fontSize="30" fontWeight="bold">2025</text>
                                 <path d="M50 0 Q25 -25 10 0 Q25 -25 50 0 Q75 -25 90 0 Q75 -25 50 0" fill="none" stroke="#a44a2d" strokeWidth="3" />
                             </g>
-                            <g transform="translate(265, 800)">
+                            <g transform="translate(265, 800)"
+                               onClick={onGiftClick}
+                               style={{ cursor: 'pointer' }}
+                               className="gift-box">
                                 <rect x="0" y="0" width="90" height="80" fill="#78beff" />
                                 <path d="M0 40 L90 40 M45 0 L45 80" stroke="red" strokeWidth="4" />
                                 <path d="M45 0 Q25 -20 10 0 Q25 -20 45 0 Q65 -20 80 0 Q65 -20 45 0" fill="none" stroke="red" strokeWidth="3" />
