@@ -17,18 +17,18 @@ const CrosswordPuzzle = () => {
     });
 
     const clues = [
-        { id: 'clue1', text: 'I\'m found in the ocean and can "clap" without hands.', answer: '🦭', correctCoord: '(1,1)' },
-        { id: 'clue2', text: 'Count me to fall asleep; I\'m fluffy like a cloud.', answer: '🐑', correctCoord: '(2,1)' },
-        { id: 'clue3', text: 'I purr, I nap, I land on my feet.', answer: '🐱', correctCoord: '(2,2)' },
-        { id: 'clue4', text: 'A buttery, crescent-shaped breakfast pastry.', answer: '🥐', correctCoord: '(3,1)' },
-        { id: 'clue5', text: 'I\'m the symbol of love; I beat inside you.', answer: '❤️', correctCoord: '(3,2)' },
-        { id: 'clue6', text: 'I bark, I fetch, and I\'m loyal.', answer: '🐶', correctCoord: '(3,3)' },
-        { id: 'clue7', text: 'Lights off, screen on—time for a story.', answer: '🎬', correctCoord: '(4,1)' },
-        { id: 'clue8', text: 'Oink oink—pink, round, and loves snacks.', answer: '🐷', correctCoord: '(4,2)' },
-        { id: 'clue9', text: 'A fancy knot you wear at your collar (or tie on a gift).', answer: '🎀', correctCoord: '(4,3)' },
-        { id: 'clue10', text: 'I\'m a light that turns on when you get an idea.', answer: '💡', correctCoord: '(4,4)' },
-        { id: 'clue11', text: 'I fix a tear with thread; I\'m a tiny repeated loop.', answer: '🧵', correctCoord: '(5,1)' },
-        { id: 'clue12', text: 'Sweet, colorful, small—often wrapped.', answer: '🍭', correctCoord: '(5,2)' }
+        { id: 'clue1', text: 'I\'m found in the ocean and can "clap" without hands. I sit at the starting corner of the whole grid.', answer: '🦭', correctCoord: '(1,1)' },
+        { id: 'clue2', text: 'People count me to fall asleep; I\'m fluffy like a cloud. I share the same "spine" as the ocean clapper and sit immediately beneath it.', answer: '🐑', correctCoord: '(2,1)' },
+        { id: 'clue3', text: 'I purr, I nap, and I land on my feet. I touch the sleep-counter by a side, and I am the only animal on my level.', answer: '🐱', correctCoord: '(2,2)' },
+        { id: 'clue4', text: 'A buttery, crescent-shaped breakfast pastry. I remain on the same spine as the first answer, but I\'m two steps below it.', answer: '🥐', correctCoord: '(3,1)' },
+        { id: 'clue5', text: 'I\'m the symbol of love; I beat inside you. I sit flush against the pastry, forming the start of a three-word run.', answer: '❤️', correctCoord: '(3,2)' },
+        { id: 'clue6', text: 'I bark, I fetch, and I\'m loyal. I complete that three-word run by sitting directly against the beating symbol.', answer: '🐶', correctCoord: '(3,3)' },
+        { id: 'clue7', text: 'Lights off, screen on, time for a story. I begin the only level where four consecutive cells are filled.', answer: '🎬', correctCoord: '(4,1)' },
+        { id: 'clue8', text: 'Oink oink, pink, round, and loves snacks. On that four-filled level, I stand closest to the story.', answer: '🐷', correctCoord: '(4,2)' },
+        { id: 'clue9', text: 'A fancy knot you wear at your collar or tie on a gift. On the same four-filled level, I\'m farther from the story than the snack-lover is, but closer than the bright idea is.', answer: '🎀', correctCoord: '(4,3)' },
+        { id: 'clue10', text: 'I\'m a light that turns on when you get an idea. On that four-filled level, nothing sits beyond me.', answer: '💡', correctCoord: '(4,4)' },
+        { id: 'clue11', text: 'I fix a tear with thread; I\'m a tiny repeated loop. I live on the same spine as the story, immediately beneath it.', answer: '🧵', correctCoord: '(5,1)' },
+        { id: 'clue12', text: 'Sweet, colorful, small, often wrapped. I sit directly against the thread-fixer, and I am the only non-tool object sharing that level with it.', answer: '🍭', correctCoord: '(5,2)' }
     ];
 
     const handleInputChange = (clueId, field, value) => {

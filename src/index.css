@@ -519,6 +519,15 @@ main {
     filter: drop-shadow(0 4px 8px rgba(255,215,0,0.3)) drop-shadow(0 0 15px rgba(255,215,0,0.2));
 }
 
+.hat-decoration {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hat-decoration:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(255,215,0,0.4)) drop-shadow(0 0 15px rgba(255,215,0,0.3));
+}
+
 .hidden-gift-content {
     background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 100%);
     border: 2px solid #ffd700;

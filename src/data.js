@@ -33,31 +33,48 @@ export const BULBS = [
 
 export const STAR_MESSAGE = {
     type: "Special",
-    message: `阿妞，圣诞快乐！
-
-谢谢阿妞这一年来为我所做的一切，谢谢。
-
-和阿妞在一起的这将近九个月里，我学到了很多很多。阿妞是一个充满正能量的人，总是能开开心心地生活着。你改变了我很多原本的想法。我开始更爱笑了，开始喜欢打扮、让家变得有情调，变得更热情、更开朗，也慢慢学会了耐心。也让我学会了说情话，学会了怎么照顾人，也学会了在爱人面前低头。
-
-因为你，我也懂得了什么是付出、谦让和包容，也在努力学习该如何去真正地爱一个人，学着把原本一个人的生活，慢慢变成两个人的生活。
-
-谢谢阿妞每天陪着我，给我做好吃的，总是迁就我、顺着我，还带着我去体验那么多新的事物。谢谢你包容我，教会我什么是健康的关系，什么是正确地与人相处。谢谢你教会我如何沟通，用行动做我的榜样。也谢谢你一直在努力适应我的性格。
-
-我想说，遇见你是我这辈子最大的幸运。我也从来没有遇到过一个人，能像你一样对我这么好。
-
-这一年我们经历了很多，也在学着成长为更好的大人。我也是第一次恋爱，有很多做的不好的事情还得请阿妞多多指教。我愿意为了我们再去做改变，我也坚信我们可以一起变得更好。
-
-阿妞，你永远是那个我最欣赏的，最崇拜的，我最爱的人。
-
-我想守护你。 ⭐`
+    hasVideo: true,
+    videoSrc: "/christmas/k1.MOV",
 };
 
 export const HIDDEN_GIFT = {
     type: "Hidden Gift",
-    title: "🎁 Hidden",
+    title: "🎁 Hidden 4",
     hasVideo: true,
     videoSrc: "/christmas/v1.mp4",
     message: "没猜到吧！略略略😜"
+};
+
+export const LEFT_GIFT = {
+    type: "Left Gift",
+    title: "🎁 Hidden 1",
+    hasVideo: true,
+    videoSrc: "/christmas/m1.MOV",
+    message: "哈哈哈哈哈哈哈哈"
+};
+
+export const SECOND_GIFT = {
+    type: "Hidden 2",
+    title: "🎁 Hidden 2",
+    hasImage: true,
+    imageSrc: "/christmas/1.png",
+    message: "嘻嘻不嘻嘻"
+};
+
+export const THIRD_GIFT = {
+    type: "Third Gift",
+    title: "🎁 Hidden 3",
+    hasImage: true,
+    imageSrc: "/christmas/4.jpg",
+    message: "love u"
+};
+
+export const HAT_GIFT = {
+    type: "Hat Gift",
+    title: "🎩 Final Hidden",
+    hasImage: true,
+    imageSrc: "/christmas/3.jpg",
+    message: "老婆你知道为什么我喜欢日落吗 --- 因为日落见证了我们每一次的亲吻"
 };
 
 // Grid position validation mapping

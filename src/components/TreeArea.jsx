@@ -1,7 +1,7 @@
 import React from 'react';
 import { SPOTS, BULBS, STAR_MESSAGE } from '../data';
 
-const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive, onGiftClick }) => {
+const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarClick, starActive, onGiftClick, onRightGiftClick, onLeftGiftClick, onSecondGiftClick, onThirdGiftClick, onHatClick }) => {
     return (
         <section className="panel treeWrap">
             <div className="panelHeader">
@@ -33,20 +33,23 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                             </g>
 
                             <g transform="translate(100, 700)" 
-                               onClick={onGiftClick}
+                               onClick={onLeftGiftClick}
                                style={{ cursor: 'pointer' }}
                                className="gift-box">
                                 <rect x="0" y="30" width="150" height="100" fill="#7a2a2a" />
                                 <text x="10" y="80" fill="#5a1a1a" fontSize="40" fontWeight="bold">2025</text>
                                 <path d="M75 30 Q50 0 25 30 Q50 0 75 30 Q100 0 125 30 Q100 0 75 30" fill="none" stroke="#5a1a1a" strokeWidth="4" />
-                                <g transform="translate(-20, -10)">
+                                <g transform="translate(-20, -10)"
+                                   onClick={(e) => { e.stopPropagation(); onHatClick(); }}
+                                   style={{ cursor: 'pointer' }}
+                                   className="hat-decoration">
                                     <path d="M0 50 Q25 0 50 50 Z" fill="red" />
                                     <rect x="-5" y="45" width="60" height="10" rx="5" fill="white" />
                                     <circle cx="25" cy="0" r="8" fill="white" />
                                 </g>
                             </g>
                             <g transform="translate(250, 750)"
-                               onClick={onGiftClick}
+                               onClick={onSecondGiftClick}
                                style={{ cursor: 'pointer' }}
                                className="gift-box">
                                 <rect x="0" y="0" width="80" height="60" fill="#a4b57e" />
@@ -54,7 +57,7 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                                 <path d="M40 0 Q20 -20 10 0 Q20 -20 40 0 Q60 -20 70 0 Q60 -20 40 0" fill="none" stroke="#7a8a5e" strokeWidth="3" />
                             </g>
                             <g transform="translate(420, 650)"
-                               onClick={onGiftClick}
+                               onClick={onRightGiftClick}
                                style={{ cursor: 'pointer' }}
                                className="gift-box">
                                 <rect x="0" y="50" width="160" height="120" fill="#7a2a2a" />
@@ -68,7 +71,7 @@ const TreeArea = ({ placedOrnaments, onDrop, onOrnamentClick, lightsOn, onStarCl
                                 </g>
                             </g>
                             <g transform="translate(350, 760)"
-                               onClick={onGiftClick}
+                               onClick={onThirdGiftClick}
                                style={{ cursor: 'pointer' }}
                                className="gift-box">
                                 <rect x="0" y="0" width="100" height="70" fill="#c46a3d" />
