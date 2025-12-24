@@ -48,3 +48,4 @@ A beautiful interactive Christmas tree decorating application built with React a
 - `src/assets/` - Images and static files
 
 Merry Christmas! 🎅✨
+

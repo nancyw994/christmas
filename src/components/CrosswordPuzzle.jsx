@@ -17,20 +17,20 @@ const CrosswordPuzzle = () => {
     });
 
     const clues = [
-        { id: 'clue1', text: 'I\'m found in the ocean and can "clap" without hands. I sit at the starting corner of the whole grid.', answer: '🦭', correctCoord: '(1,1)' },
-        { id: 'clue2', text: 'People count me to fall asleep; I\'m fluffy like a cloud. I share the same "spine" as the ocean clapper and sit immediately beneath it.', answer: '🐑', correctCoord: '(2,1)' },
-        { id: 'clue3', text: 'I purr, I nap, and I land on my feet. I touch the sleep-counter by a side, and I am the only animal on my level.', answer: '🐱', correctCoord: '(2,2)' },
-        { id: 'clue4', text: 'A buttery, crescent-shaped breakfast pastry. I remain on the same spine as the first answer, but I\'m two steps below it.', answer: '🥐', correctCoord: '(3,1)' },
-        { id: 'clue5', text: 'I\'m the symbol of love; I beat inside you. I sit flush against the pastry, forming the start of a three-word run.', answer: '❤️', correctCoord: '(3,2)' },
-        { id: 'clue6', text: 'I bark, I fetch, and I\'m loyal. I complete that three-word run by sitting directly against the beating symbol.', answer: '🐶', correctCoord: '(3,3)' },
-        { id: 'clue7', text: 'Lights off, screen on, time for a story. I begin the only level where four consecutive cells are filled.', answer: '🎬', correctCoord: '(4,1)' },
-        { id: 'clue8', text: 'Oink oink, pink, round, and loves snacks. On that four-filled level, I stand closest to the story.', answer: '🐷', correctCoord: '(4,2)' },
-        { id: 'clue9', text: 'A fancy knot you wear at your collar or tie on a gift. On the same four-filled level, I\'m farther from the story than the snack-lover is, but closer than the bright idea is.', answer: '🎀', correctCoord: '(4,3)' },
-        { id: 'clue10', text: 'I\'m a light that turns on when you get an idea. On that four-filled level, nothing sits beyond me.', answer: '💡', correctCoord: '(4,4)' },
-        { id: 'clue11', text: 'I fix a tear with thread; I\'m a tiny repeated loop. I live on the same spine as the story, immediately beneath it.', answer: '🧵', correctCoord: '(5,1)' },
-        { id: 'clue12', text: 'Sweet, colorful, small, often wrapped. I sit directly against the thread-fixer, and I am the only non-tool object sharing that level with it.', answer: '🍭', correctCoord: '(5,2)' }
-    ];
-
+        { id: 'clue1', text: '我住在大海里，不用手也能“拍手”。我在整个格子的起点角落等你。', answer: '🦭', correctCoord: '(1,1)' },
+        { id: 'clue2', text: '人们常常数着我入睡，我软软的，像一朵云。我和海里的那位在同一条竖线上，就在它正下方。', answer: '🐑', correctCoord: '(2,1)' },
+        { id: 'clue3', text: '我会打呼噜、爱睡觉，而且总能稳稳落地。我贴着那只“数睡眠的”，这一层只有我一个动物。', answer: '🐱', correctCoord: '(2,2)' },
+        { id: 'clue4', text: '我是黄油味的、弯弯的早餐点心。我还在第一位所在的那条竖线上，只是比它低两格。', answer: '🥐', correctCoord: '(3,1)' },
+        { id: 'clue5', text: '我是爱的象征，在你心里跳动。我紧挨着那份早餐，开启一段三格连在一起的小故事。', answer: '❤️', correctCoord: '(3,2)' },
+        { id: 'clue6', text: '我会汪汪叫、会捡球，也一直很忠诚。我贴着那颗跳动的心，完成这段三连格。', answer: '🐶', correctCoord: '(3,3)' },
+        { id: 'clue7', text: '灯关掉，屏幕亮起，是看故事的时间。我所在的这一层，是唯一被连续填满四格的一行。', answer: '🎬', correctCoord: '(4,1)' },
+        { id: 'clue8', text: '粉粉的，圆圆的，哼哼叫，还特别爱吃零食。在这一整行里，我离故事最近。', answer: '🐷', correctCoord: '(4,2)' },
+        { id: 'clue9', text: '我是一种漂亮的结，可以戴在脖子上，也能系在礼物上。在这一行里，我离故事比小吃货远一点，但又比灵感之光近。', answer: '🎀', correctCoord: '(4,3)' },
+        { id: 'clue10', text: '当灵感突然出现时，我就会亮起来。在这一整行里，我站在最外侧，没有人再在我旁边。', answer: '💡', correctCoord: '(4,4)' },
+        { id: 'clue11', text: '我用线把破洞缝好，是一个一个重复的小圈。我和故事在同一条竖线上，就在它下面。', answer: '🧵', correctCoord: '(5,1)' },
+        { id: 'clue12', text: '我甜甜的、彩色的、小小的，通常还会被包起来。我紧贴着缝补者，这一层里只有我陪着它。', answer: '🍭', correctCoord: '(5,2)' }
+      ];
+      
     const handleInputChange = (clueId, field, value) => {
         setAnswers(prev => ({
             ...prev,

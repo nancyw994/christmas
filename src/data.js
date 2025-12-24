@@ -3,18 +3,18 @@ export const AUTH_ANSWER = "04/11/2025";
 export const TOTAL_ORNAMENTS = 12;
 
 export const ORNAMENTS = [
-    { id: "o1", label: "🎀", type: "Memory", colorClass: "c1", message: "On the very first night we were together, it was the moment I was so happy I couldn't fall asleep, just lying there looking at you, my heart completely full." },
-    { id: "o2", label: "🥐", type: "Memory", colorClass: "c2", message: "At Yonghe Temple, it was the moment I prayed to the Buddha to protect us and let us walk safely and smoothly all the way to forever." },
-    { id: "o3", label: "💡", type: "Memory", colorClass: "c3", message: "While biking under the sunset in SF, it was the moment I felt wild and alive." },
-    { id: "o4", label: "🐱", type: "Memory", colorClass: "c4", message: "In the cabin, lighting a campfire and eating instant noodles together, it was the moment I felt the simplest and purest happiness." },
-    { id: "o5", label: "🐶", type: "Memory", colorClass: "c5", message: "During the accident in Portland, it was the moment that made me even more certain that I want to love you for the rest of my life." },
-    { id: "o6", label: "🐷", type: "Memory", colorClass: "c2", message: "Standing on the mountaintop in Harpers Ferry and looking down, it was the moment I knew that from that day on, this place belonged only to you and me." },
-    { id: "o7", label: "🎬", type: "Memory", colorClass: "c3", message: "In Cancún, sailing, drinking, paddleboarding, flowriding, and dancing together, it was the moment I started to imagine our life when we old" },
-    { id: "o8", label: "❤️", type: "Memory", colorClass: "c4", message: "Going through the haunted house with you, it was the moment I realized that with you by my side, I wasn't afraid at all." },
-    { id: "o9", label: "🐑", type: "Memory", colorClass: "c1", message: "When I think about you, it is the moment I tell myself to work harder and harder, so I can give you the best life sooner." },
-    { id: "o10", label: "👽", type: "Memory", colorClass: "c2", message: "That afternoon in Chicago, on my very first day, I sat by the river watching planes pass one by one overhead, wondering which one might be yours. Maybe it was in that moment, without even realizing it, that I had already fallen in love with you." },
-    { id: "o11", label: "🍭", type: "Memory", colorClass: "c3", message: "Every night in Cancún, it was our date night, just you and me. Evvery sunset kiss we had was a record of our love." },
-    { id: "o12", label: "🦭", type: "Memory", colorClass: "c4", message: "On the day I received the Mimi book, it was the moment I stared at it for a long time and cried for a long time, because I knew it was your silent but most powerful love." }
+    { id: "o1", label: "🎀", type: "Memory", colorClass: "c1", message: "在我们在一起后的第一晚，我兴奋的睡不着觉，我躺在床上静静地看着你，我的心里充满了幸福" },
+    { id: "o2", label: "🥐", type: "Memory", colorClass: "c2", message: "在雍和宫我向佛祖许愿，我祈求佛祖保佑我们平安顺利，一直到永远" },
+    { id: "o3", label: "💡", type: "Memory", colorClass: "c3", message: "在sf骑车追逐日落的时候，我仿佛感受到了那种只有我们两个人在望不到尽头的草地上肆意的奔跑，一回头看到你在身边，世界安静到只能听到我们的笑声和风声，在那一刻我感受到了无尽的自由与活力，那是只属于我们的世界" },
+    { id: "o4", label: "🐱", type: "Memory", colorClass: "c4", message: "在小木屋外里点起篝火，一起吃泡面烤棉花糖的时候，我感受到了最简单纯粹的幸福" },
+    { id: "o5", label: "🐶", type: "Memory", colorClass: "c5", message: "在portland发生事故的时候，我比哪一刻都更加确认你就是我想共度余生的人" },
+    { id: "o6", label: "🐷", type: "Memory", colorClass: "c2", message: "在harpers ferry的山顶上，我俯瞰着整个小镇，我知道从那天起，这个地方只属于我们两个人" },
+    { id: "o7", label: "🎬", type: "Memory", colorClass: "c3", message: "在cancun，我们一起玩帆船，一起喝酒，一起玩paddleboard，flowriding，一起跳舞，我开始幻想和期待我们老了之后的生活" },
+    { id: "o8", label: "❤️", type: "Memory", colorClass: "c4", message: "和你一起去鬼屋的时候，每次一想到有你在我的身边，我就什么都不怕了" },
+    { id: "o9", label: "🐑", type: "Memory", colorClass: "c1", message: "每一次一想到你，我都在告诉我要再努力一点，这样就可以给你更好的生活" },
+    { id: "o10", label: "👽", type: "Memory", colorClass: "c2", message: "到chicago的第一天下午，我一个人坐在河畔望着天上飞过的飞机，我一直在猜想哪一辆会是你的，或许从那刻起，我就在不知不觉中喜欢上了你" },
+    { id: "o11", label: "🍭", type: "Memory", colorClass: "c3", message: "在cancun的每一晚都是只属于我们两个人的date night; 每一天的夕阳都是我们爱情的见证" },
+    { id: "o12", label: "🦭", type: "Memory", colorClass: "c4", message: "收到咪咪书的那天 我静静地看着了好久好久 我知道阿妞不是个感性的人 但我知道这是阿妞再把心底最柔软的地方给我" }
 ];
 
 export const SPOTS = [
